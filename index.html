@@ -2,34 +2,38 @@
 <html>
 <head>
 	<title>HangMan</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel = "stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-<body>
+<body class = bg-primary>
 
-<div class = "row">
-	<div class = "col-xs-12">
-		<h1>HangMan</h1>
+<div class = "container">
+
+  <div class = "row">
+	<div class = "col-xs-12 text-center">
+		<h1>HangMan: The Disney Way</h1>
 	</div>
+  </div>
 </div>
 
-<div class = "row">
+<div class = "container">
+  <div class = "row">
 
 	<div class = "col-xs-12 col-sm-6">
 
+		<img src="assets/images/disney.jpeg" class = "img-circle" alt = "Disney Pic">
 
-	<p>Column !</p>
-
-		<!-- image for life -->
-		<!-- image for winner -->
-		<!-- image for loser  -->
 		
 	</div>
 	
-	<div class = "col-xs-12 col-sm-6">
+	<div class = "col-xs-12 col-sm-6 guessMovie">
 
-		<p>Press spacebar to start<p>
+		<h2>Guess the Disney Movie</h2>
 
-		<p>Current Word</p>
+		<p>Press spacebar to begin<p>
+
+		<p>Current Movie</p>
 
 		<p id = "currentInProgress"></p>
 
@@ -45,11 +49,16 @@
 
 		<p id = "totalWins"></p>
 
+		<audio id="soundWin" src="assets/sounds/winning.mp3" preload="auto"></audio>
+<a href="javascript:playWinningSound();"></a>
+
+		<audio id="soundLoss" src="assets/sounds/loss.mp3" preload="auto"></audio>
+<a href="javascript:playWinningSound();"></a>
 
 	</div>
 
+  </div> 
 </div>
-
 
 <div>
 <script src = "assets/javascript/game2.js"></script>

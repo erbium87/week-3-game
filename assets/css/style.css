@@ -1,0 +1,13 @@
+.img-circle {
+	display: block;
+	margin: 50px auto;
+
+}
+
+.guessMovie {
+	margin: 20px auto;
+}
+
+p {
+	font-weight: bold;
+} 
